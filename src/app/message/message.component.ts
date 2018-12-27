@@ -6,6 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./message.component.scss']
 })
 export class MessageComponent implements OnInit {
+  // https://dzone.com/articles/how-to-create-your-first-angular-element
   title = 'Angular Elements';
   @Input() name: string;
   @Input() answer: string;
