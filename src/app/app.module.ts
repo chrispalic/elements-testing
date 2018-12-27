@@ -2,15 +2,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { MessageComponent } from './message/message.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  // Do not pass a component here
+  bootstrap: [],
+  // Add and pass component here
+  entryComponents: [MessageComponent]
 })
 export class AppModule { }
